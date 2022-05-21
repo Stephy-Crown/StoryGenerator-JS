@@ -95,7 +95,7 @@ body{
   color: red;
   margin-top:0px ;
   display: flex;
-  flex:1;
+  flex: 1;
   font-size: 20px;
   align-items: center;
   justify-content: center;
@@ -111,24 +111,39 @@ body{
 
 @media  only screen and (max-width: 600px) {
   .Entire-form{
-    width: 85%;
+    width: 50%;
  
 
     
   
    
   }
+  .form-container,.story-container{
+    width: 400px;
+    object-fit: contain;
  }
- @media  only screen and (min-width: 600px) {
-  .Entire-form{
-    width: 85%;
- 
  
 
+}
+
+ @media  only screen and (min-width: 600px) {
+  .Entire-form{
+    width: 50%;
+    object-fit: contain;
+ 
+ 
+  }
     
   
+  
+  .form-container,.story-container{
+    width: 400px;
+    object-fit: contain;
   }
+  .Error-container{
+    width: 1200px;
   }
+}
   @media only screen and (min-width: 768px) {
     .Entire-form{
       width: 100%;
