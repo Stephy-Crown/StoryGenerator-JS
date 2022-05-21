@@ -106,14 +106,12 @@ body{
 
 }
 
-.Entire-form{
-  display: grid;
-}
+
 
 
 @media  only screen and (max-width: 600px) {
   .Entire-form{
-    grid-template-columns: 1fr;
+    width: 85%;
  
 
     
@@ -123,7 +121,8 @@ body{
  }
  @media  only screen and (min-width: 600px) {
   .Entire-form{
-    grid-template-columns: 1fr;
+    width: 85%;
+ 
  
 
     
@@ -132,7 +131,8 @@ body{
   }
   @media only screen and (min-width: 768px) {
     .Entire-form{
-      grid-template-columns: 1fr;
+      width: 100%;
+ 
    
   
       
@@ -140,8 +140,8 @@ body{
   }
   @media  only screen and (min-width:1200px) {
     .Entire-form{
-      grid-template-columns: 1fr;
-   
+      width: 100%;
+ 
   
       
     }
