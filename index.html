@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My JS User Input Form</title>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+
+  <form id="form">
+
+<div class="Error-container">
+  <div id="error"></div>
+</div>
+
+
+<div class="form-container">
+
+    <div class="first-name"> 
+    <label for="firstname" >First Name:</label>
+    <input type="text" id="fname" name="first_name" placeholder="Enter First Name" class="input" size="30">
+    </div>
+
+  <div class="last-name">
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lname" name="last_name" placeholder="Enter Last Name" class="input" size="30">
+  </div>
+    
+
+
+<div class="age">
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="user_age" size="35" placeholder="Enter your age" class="input">
+</div>
+
+<div class="color">
+  <label for="favouritecolor">Favourite Color:</label>
+  <input type="text" id="color" name="user_color" size="30" placeholder="What's your favourite color?" class="input">
+</div>
+
+<div class="button-container">
+  <button type="submit" onclick="myStory()" value="submit" class="button">
+    Tell My Story
+  </button>
+</div>
+  
+
+
+</div>
+
+<div class="story-container">
+  <div id="story"></div>
+</div>
+
+
+</form>
+<script>
+  let form = document.querySelector('#form')
+
+  form.addEventListener('submit',(e)=>{
+   e.preventDefault()
+   let fname= document.getElementById("fname").value;
+      let lname= document.getElementById("lname").value;
+      let age= document.getElementById("age").value;
+      let color= document.getElementById("color").value;
+      let error = document.querySelector('#error')
+      let story  = document.querySelector('#story')
+      if (fname==""){
+          return error.innerHTML = " ERROR MESSAGE: Your details MUST be filled out to gain access to  your story!";
+      }
+        if (lname==""){
+        
+        return error.innerHTML= " ERROR MESSAGE: Your details MUST be filled out to gain access to  your story!";
+        }
+        else if (age==""){
+        
+        return error.innerHTML = " ERROR MESSAGE: Your details MUST be filled out to gain access to  your story!"
+        }
+        else if (color==""){
+        
+        return error.innerHTML = " ERROR MESSAGE: Your details MUST be filled out to gain access to  your story!"
+        }
+
+        else{
+  
+          
+          let myStory = ` ${fname}  ${lname}  is someone who is kind, caring, productive and innovative. You are ${age} years old. Your favourite color is ${color}. I got that right? lol. Hey ${fname}! You are strong, you are wise, you're worth more than rubies or gold. There is nobody in the world like ${fname} !  Thank You for inputting your details ${fname} ${lname} . See you again!`
+          
+          story.innerHTML = myStory
+  
+  
+
+    }
+  }
+  )
+  
+</script>
+  
+</body>
+</html>

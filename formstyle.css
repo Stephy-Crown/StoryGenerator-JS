@@ -1,0 +1,138 @@
+.form-container{
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+
+  background-color: white;
+  margin:50px 100px;
+  width: 500px;
+  height: 400px;
+  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(167, 153, 153);
+
+ 
+}
+body{
+  background-color:bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container{
+  margin-top: 20px;
+  
+}
+.button{
+  
+  padding: 6px 9px;
+  background-color: bisque;
+  border-width: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border-radius:4px ;
+  border-color: rgb(199, 79, 79);
+  font-weight: bold;
+
+}
+
+.button:hover{
+  color:white;
+  background-color: grey;
+}
+
+.first-name, .last-name, .age, .color{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.first-name, .last-name, .age, .color{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.first-name{
+  margin-top: 50px;
+}
+
+.input{
+  height: 30px;
+  padding: 2px;
+  border-radius:2px;
+  padding-left:4px;
+}
+
+.story-container{
+  display: flex;
+  width: 500px;
+  border:3px solid rgba(19, 11, 11, 0.3);
+  text-align: center;
+  padding: 10px;
+
+
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  
+    background-color:bisque;
+    margin:50px 90px;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    height: 150px;
+    
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  
+   
+
+}
+.Error-container{
+  height: 50px;
+  background-color: rgb(247, 243, 243);
+  color: red;
+  margin-top:0px ;
+  display: flex;
+  flex:1;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 2px;
+
+}
+
+
+@media screen and (max-width: 750px) {
+  .form-container{
+    width:500px ;
+  
+   
+  }
+ }
+ @media screen and (max-width: 600px) {
+  .form-container{
+    width:500px ;
+  
+  }
+  }
+  @media screen and (max-width: 400px) {
+    .form-container{
+      width:500px ;
+    
+     
+    }
+  }
+  @media screen and (min-width:1000px) {
+    .form-container{
+      width:500px ;
+    
+     
+    }
+    
+  }
+
