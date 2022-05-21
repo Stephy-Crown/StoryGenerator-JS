@@ -106,32 +106,44 @@ body{
 
 }
 
+.Entire-form{
+  display: grid;
+}
 
-@media screen and (max-width: 750px) {
-  .form-container{
-    width:500px ;
+
+@media  only screen and (max-width: 600px) {
+  .Entire-form{
+    grid-template-columns: 1fr;
+ 
+
+    
   
    
   }
  }
- @media screen and (max-width: 600px) {
-  .form-container{
-    width:500px ;
+ @media  only screen and (min-width: 600px) {
+  .Entire-form{
+    grid-template-columns: 1fr;
+ 
+
+    
   
   }
   }
-  @media screen and (max-width: 400px) {
-    .form-container{
-      width:500px ;
-    
-     
+  @media only screen and (min-width: 768px) {
+    .Entire-form{
+      grid-template-columns: 1fr;
+   
+  
+      
     }
   }
-  @media screen and (min-width:1000px) {
-    .form-container{
-      width:500px ;
-    
-     
+  @media  only screen and (min-width:1200px) {
+    .Entire-form{
+      grid-template-columns: 1fr;
+   
+  
+      
     }
     
   }
