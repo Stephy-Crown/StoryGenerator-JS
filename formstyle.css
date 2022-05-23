@@ -5,7 +5,7 @@
   margin:50px 100px;
   width: 500px;
   height: 400px;
-  
+  min-width: 400px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
 
  
 }
-body{
+.display{
   background-color:bisque;
   display: flex;
   align-items: center;
@@ -33,9 +33,10 @@ body{
   border-width: 1px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
-  border-radius:4px ;
+  border-radius:50px ;
   border-color: rgb(199, 79, 79);
   font-weight: bold;
+  width: 200px;
 
 }
 
@@ -63,6 +64,7 @@ body{
   padding: 2px;
   border-radius:2px;
   padding-left:4px;
+  border-radius:10px ;
 }
 
 .story-container{
@@ -71,6 +73,7 @@ body{
   border:3px solid rgba(19, 11, 11, 0.3);
   text-align: center;
   padding: 10px;
+  min-width: 400px;
 
 
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
@@ -106,32 +109,58 @@ body{
 
 }
 
+.generator{
+  
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+
 
 @media  only screen and (max-width: 600px) {
-  body{
-    width:100%;
+  .form-container{
+    width:50%;
   
    
   }
+  .story-container{
+    width: 50%;
+
+  }
  }
  @media  only screen and (min-width: 600px) {
-  body{
-    width:100% ;
+  .form-container{
+    width:50% ;
   
+  }
+  .story-container{
+    width: 50%;
+
   }
   }
   @media only screen and (min-width: 768px) {
-    body{
-      width:100% ;
+    .form-container{
+      width:50% ;
     
      
     }
+    .story-container{
+      width: 50%;
+  
+    }
   }
   @media  only screen and (min-width:1200px) {
-    body{
-      width:100% ;
+    .form-container{
+      width:50% ;
     
      
+    }
+    .story-container{
+      width: 50%;
+  
     }
     
   }
